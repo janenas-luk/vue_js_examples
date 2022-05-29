@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div>
+            <p>There is {{ getListCount }} items in the list</p>
+        </div>
         <ul>
             <li v-for="(item, index) in items" :key="item.id">
                 <todo-item :item="item" :index="index"></todo-item>
@@ -10,6 +13,7 @@
 <script>
 
 import TodoItem from './TodoItem.vue'
+import { mapGetters } from 'vuex'
 
 export default {
     name: "TodoList",
@@ -18,6 +22,9 @@ export default {
     },
     props: {
         items: { required: true, type: Array}
-    }
+    },
+    computed: mapGetters([
+        'getListCount'
+    ])
 }
 </script>

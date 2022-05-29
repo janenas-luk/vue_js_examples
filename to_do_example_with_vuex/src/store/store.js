@@ -8,7 +8,9 @@ export default new Vuex.Store({
         todoList: []
     },
     getters: {
-
+        getListCount(state) {
+            return state.todoList.length
+        }
     },
     mutations: {
         initTodoList(state) {
