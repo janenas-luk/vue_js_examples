@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First post",
+      "body": "Some random text for post",
+      "author": "vuejs"
+    },
+    {
+      "title": "Second post",
+      "body": "Just some more random text for the post",
+      "author": "vuejs",
+      "id": 2
+    },
+    {
+      "title": "Third post",
+      "body": "This is some random text for third post",
+      "author": "developer",
+      "id": 3
+    },
+    {
+      "title": "Fourth post",
+      "body": "More random text",
+      "author": "developer",
+      "id": 4
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "vuejs"
+    },
+    {
+      "id": 2,
+      "name": "developer"
+    }
+  ]
+}
