@@ -28,7 +28,7 @@ export default {
   methods: {
     getPosts() {
       axios
-        .get("http://localhost:3000/posts")
+        .get(this.$apiUrl + "/posts")
         .then((response) => (this.posts = response.data));
     },
     openModal() {

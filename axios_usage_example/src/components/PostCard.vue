@@ -32,8 +32,8 @@
 
 <script>
 export default {
-    props: {
-        post: {required: true, type: Object}
-    }
-}
+  props: {
+    post: { required: true, type: Object },
+  },
+};
 </script>

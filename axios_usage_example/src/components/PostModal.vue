@@ -72,13 +72,13 @@ export default {
   methods: {
     getAuthors() {
       axios
-        .get("http://localhost:3000/authors")
+        .get(this.$apiUrl + "/authors")
         .then((response) => (this.authors = response.data));
     },
     submitForm() {
       // console.log("Title: " + this.title + "\nAuthor: " + this.author + "\nContent: " + this.content)
       axios
-        .post("http://localhost:3000/posts", {title: this.title, body: this.content, author: this.author})
+        .post(this.$apiUrl + "/posts", {title: this.title, body: this.content, author: this.author})
         .then((response) => (console.log(response)))
         .then(() => (this.$emit('reload-posts')))
         .then(() => (this.closeModal()))
