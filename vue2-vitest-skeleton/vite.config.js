@@ -1,9 +1,3 @@
-// const { createVuePlugin } = require('vite-plugin-vue2');
-
-// module.exports = {
-//   plugins: [createVuePlugin()],
-// };
-
 import { defineConfig } from "vitest/config";
 import vue from '@vitejs/plugin-vue2'
 
